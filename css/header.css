@@ -1,0 +1,103 @@
+header{
+    width: 100%;
+    min-height: 800px;
+    height: 90vh; 
+    padding: 40px 2%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/capa.png');
+    color: white;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+}
+
+
+header a:hover{
+    font-weight: 600;
+    color: white;
+}
+
+.header{
+    display: flex;
+}
+
+.logo{
+    flex: 1;
+}
+.logo a{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav.menu-desktop ul{
+    display: flex;
+    list-style: none;
+}
+nav.menu-desktop li{
+    margin: 0 20px;
+    padding: 6px 0;
+}
+
+nav.menu-mobile{
+    display: none;
+    background-image: url('../images/menu.png');
+    background-size: 100% 100%;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+nav.menu-mobile ul{
+    display: none;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+}
+nav.menu-mobile li{
+    background-color: #4d326296;
+    margin: 1px;
+    text-align: center;
+    padding: 4px;
+}
+nav.menu-mobile a{
+    font-size: 20px;
+}
+
+.chamada1{
+    max-width: 600px;
+    float: right;
+    margin: 200px 150px;
+}
+.chamada1 h2{
+    font-weight: 300;
+    font-size: 40px;
+    color: white;
+}
+.chamada1 p{
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        padding: 20px 2%;
+    }
+    nav.menu-desktop{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+    .chamada1{
+        text-align: center;
+        margin: 200px auto;
+    }
+    .chamada1 p{
+        width: 100%;
+    }
+}
